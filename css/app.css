@@ -38,6 +38,12 @@ h1 {
 
 }
 
+.perex {
+    font-size: 28px;
+    width: 660px;
+    text-align: center;
+}
+
 /*
  * Styles for the deck of cards
  */
