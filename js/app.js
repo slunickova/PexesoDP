@@ -87,7 +87,7 @@ function selectCard(event) {
         matchOne.classList.remove("show", "open", "stop");
         matchTwo.classList.remove("show", "open", "stop");
         selectedCards = [];
-      }, 600);
+      }, 1000);
       countMoves()
       starRating();
     }
