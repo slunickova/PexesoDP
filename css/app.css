@@ -70,6 +70,12 @@ h1 {
     box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
 }
 
+.deck .card img {
+  visibility: hidden;
+  height: 125px;
+  border-radius: 8px;
+}
+
 .deck .card.open {
     transform: rotateY(0);
     background: #02b3e4;
@@ -78,6 +84,7 @@ h1 {
 
 .deck .card.show {
     font-size: 33px;
+    visibility: visible;
 }
 
 .deck .card.match {

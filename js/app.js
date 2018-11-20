@@ -1,13 +1,13 @@
 //List of cards
 let cardPics = [
-  "fa-diamond", "fa-diamond",
-  "fa-paper-plane-o", "fa-paper-plane-o",
-  "fa-anchor", "fa-anchor",
-  "fa-bolt", "fa-bolt",
-  "fa-cube", "fa-cube",
-  "fa-leaf", "fa-leaf",
-  "fa-bicycle", "fa-bicycle",
-  "fa-bomb", "fa-bomb"
+  "drevorubec", "drevorubec",
+  "mikropes", "mikropes",
+  "okous", "okous",
+  "pankac", "pankac",
+  "plackonoska", "plackonoska",
+  "slintac", "slintac",
+  "svihak", "svihak",
+  "zajicovec", "zajicovec"
 ];
 
 // Shuffle function from http://stackoverflow.com/a/2450976
@@ -34,12 +34,13 @@ function newGame() {
   for (let i = 0; i < cardPics.length; i++) {
     //create `li` and `i` tags for each icon in the array
     const li = document.createElement("li");
-    const iTag = document.createElement("i");
+    const img = document.createElement("img");
     li.classList.add("card");
-    iTag.classList.add("fa");
+  //  iTag.classList.add("fa");
     //add them starting from first element until the last
-    iTag.classList.add(cardPics[i]);
-    li.appendChild(iTag);
+    img.classList.add(cardPics[i]);
+    img.src = "./img/" + cardPics[i] + ".png"
+    li.appendChild(img);
     //add li elements in fragment element so it won't keep browser busy by adding each of them one by one
     fragment.appendChild(li);
   }
