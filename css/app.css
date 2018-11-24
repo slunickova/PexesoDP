@@ -178,7 +178,7 @@ h1 {
 }
 
 .close-button:hover {
-  background-color: #18b1bf;
+  background-color: darkgray;
 }
 
 .play-button {
@@ -189,6 +189,8 @@ h1 {
   cursor: pointer;
   border-radius: 0.25rem;
   background-color: lightgray;
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
 }
 
 .go-button {
@@ -198,7 +200,9 @@ h1 {
   text-align: center;
   cursor: pointer;
   border-radius: 0.25rem;
-  background-color: lightgray;
+  background-color: #18b1bf;
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
 }
 
 .play-button:hover {
@@ -206,7 +210,7 @@ h1 {
 }
 
 .go-button:hover {
-  background-color: darkgray;
+  background-color: #148690;
 }
 
 .show-modal {
