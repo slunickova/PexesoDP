@@ -147,6 +147,7 @@ h1 {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  font-size: 24px;
   opacity: 0;
   visibility: hidden;
   z-index: 1;
@@ -177,12 +178,22 @@ h1 {
 }
 
 .close-button:hover {
-  background-color: darkgray;
+  background-color: #18b1bf;
 }
 
 .play-button {
   cursor: pointer;
-  padding: 10px;
+  padding: 14px;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.go-button {
+  cursor: pointer;
+  padding: 14px;
   line-height: 1.5rem;
   text-align: center;
   cursor: pointer;
@@ -191,6 +202,10 @@ h1 {
 }
 
 .play-button:hover {
+  background-color: darkgray;
+}
+
+.go-button:hover {
   background-color: darkgray;
 }
 
