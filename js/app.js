@@ -78,6 +78,7 @@ function selectCard(event) {
       matchTwo.classList.add("match");
       matchedCards.push(matchOne, matchTwo);
       countMoves();
+      declineMoves();
       starRating();
       selectedCards = [];
       winGame();
@@ -88,7 +89,8 @@ function selectCard(event) {
         matchTwo.classList.remove("show", "open", "stop");
         selectedCards = [];
       }, 800);
-      countMoves()
+      countMoves();
+      declineMoves();
       starRating();
     }
   //if the list has no card
@@ -127,6 +129,7 @@ function restart(){
   newGame();
   matchedCards = [];
   moves.innerHTML = 0;
+  movesName.innerHTML = " tahů";
   thirdStar.classList.remove("grey");
   secondStar.classList.remove("grey");
   firstStar.classList.remove("grey");
@@ -142,6 +145,17 @@ function restart(){
 const moves = document.querySelector(".moves");
 function countMoves() {
   moves.innerHTML++;
+}
+
+const movesName = document.querySelector(".movesName");
+function declineMoves() {
+  if (moves.innerHTML == 1) {
+    movesName.innerHTML = " tah";
+  } else if (moves.innerHTML >= 5) {
+    movesName.innerHTML = " tahů";
+  } else {
+    movesName.innerHTML = " tahy"
+  }
 }
 
 //star rating
