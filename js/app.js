@@ -39,7 +39,8 @@ function newGame() {
   //  iTag.classList.add("fa");
     //add them starting from first element until the last
     img.classList.add(cardPics[i]);
-    img.src = "./img/" + cardPics[i] + ".png"
+    img.src = "./img/" + cardPics[i] + ".png";
+    img.setAttribute("alt", "encyklopsedie: pes " + cardPics[i]);
     li.appendChild(img);
     //add li elements in fragment element so it won't keep browser busy by adding each of them one by one
     fragment.appendChild(li);
