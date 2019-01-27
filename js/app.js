@@ -95,7 +95,7 @@ function selectCard(event) {
       starRating();
     }
   //if the list has no card
-  } else {
+  } else if (selectedCards.length === 0) {
     event.target.classList.add("show", "open", "stop");
     selectedCards.push(this);
   }
